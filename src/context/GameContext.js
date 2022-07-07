@@ -4,13 +4,17 @@ export const GameContext = createContext({});
 
 const GameProvider = ({ children }) => {
   const [difficulty, setDifficulty] = useState("");
-
-  const chooseDifficultyHandler = (chosenDifficulty) => {
-    setDifficulty(chosenDifficulty);
-  };
+  const [clickedOnCard, setClickedOnCard] = useState(0);
 
   return (
-    <GameContext.Provider value={{ chooseDifficultyHandler, difficulty }}>
+    <GameContext.Provider
+      value={{
+        difficulty,
+        setDifficulty,
+        clickedOnCard,
+        setClickedOnCard,
+      }}
+    >
       {children}
     </GameContext.Provider>
   );

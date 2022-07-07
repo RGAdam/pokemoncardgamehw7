@@ -3,14 +3,17 @@ import styled from "styled-components";
 import backgroundImage from "../assets/background-game.png";
 
 export const CenteredWrapper = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-image: url(${backgroundImage});
-  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 `;
 
 export const GameStats = styled.div`
@@ -26,4 +29,9 @@ export const GameStats = styled.div`
 export const Text = styled.p`
   font-size: 25px;
   color: rgb(255, 220, 0);
+`;
+
+export const Wrapper = styled.div`
+  // height: 100%;
+  // width: 100%;
 `;

@@ -1,5 +1,5 @@
-import { Card } from "./PokemonCard.styled";
 import { useState } from "react";
+import { Card } from "./PokemonCard.styled";
 
 import CardBackSrc from "../../assets/card-back.png";
 import Card1 from "../../assets/card-poke1.png";
@@ -17,36 +17,35 @@ const PokemonCard = ({ id }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   let cardToUse;
-
   switch (id) {
-    case 1:
+    case 0:
       cardToUse = Card1;
       break;
-    case 2:
+    case 1:
       cardToUse = Card2;
       break;
-    case 3:
+    case 2:
       cardToUse = Card3;
       break;
-    case 4:
+    case 3:
       cardToUse = Card4;
       break;
-    case 5:
+    case 4:
       cardToUse = Card5;
       break;
-    case 6:
+    case 5:
       cardToUse = Card6;
       break;
-    case 7:
+    case 6:
       cardToUse = Card7;
       break;
-    case 8:
+    case 7:
       cardToUse = Card8;
       break;
-    case 9:
+    case 8:
       cardToUse = Card9;
       break;
-    case 10:
+    case 9:
       cardToUse = Card10;
       break;
     default:

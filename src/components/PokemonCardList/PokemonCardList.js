@@ -1,33 +1,31 @@
 import { useContext, useEffect, useState } from "react";
 import { GameContext } from "../../context/GameContext";
-import PokemonCard from "../PokemonCard/PokemonCard";
 import { GameWrapper } from "./PokemonCardList.styled";
+
+import PokemonCard from "../PokemonCard/PokemonCard";
 
 const PokemonCardList = () => {
   const [usingCards, setUsingCards] = useState();
-
-  let arrayOfIds = [
-    1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10,
-  ];
-
   const { difficulty } = useContext(GameContext);
 
   useEffect(() => {
     switch (difficulty) {
       case "easy":
-        setUsingCards(8);
+        setUsingCards(4);
         break;
       case "medium":
-        setUsingCards(12);
+        setUsingCards(6);
         break;
       case "hard":
-        setUsingCards(20);
+        setUsingCards(10);
         break;
       default:
         break;
     }
-  }, []);
+  }, [difficulty]);
 
+  let arrayOfIds = Array.from(Array(usingCards).keys());
+  arrayOfIds = arrayOfIds.concat(arrayOfIds);
   arrayOfIds.sort((a, b) => 0.5 - Math.random());
 
   return (

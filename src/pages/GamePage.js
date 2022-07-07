@@ -1,4 +1,4 @@
-import { CenteredWrapper, GameStats, Text } from "./GamePage.styled";
+import { CenteredWrapper, GameStats, Text, Wrapper } from "./GamePage.styled";
 
 import Button from "../components/Button/Button";
 import HeaderBar from "../components/HeaderBar/HeaderBar";
@@ -6,7 +6,7 @@ import PokemonCardList from "../components/PokemonCardList/PokemonCardList";
 
 const GamePage = () => {
   return (
-    <div>
+    <Wrapper>
       <HeaderBar />
       <CenteredWrapper>
         <GameStats>
@@ -17,7 +17,7 @@ const GamePage = () => {
 
         <PokemonCardList />
       </CenteredWrapper>
-    </div>
+    </Wrapper>
   );
 };
 

@@ -4,10 +4,10 @@ import { GameContext } from "../../context/GameContext";
 
 const DifficultySelector = () => {
   const [option, setOption] = useState("");
-  const { chooseDifficultyHandler } = useContext(GameContext);
+  const { setDifficulty } = useContext(GameContext);
 
   useEffect(() => {
-    chooseDifficultyHandler(option);
+    setDifficulty(option);
   }, [option]);
 
   const selectorHandler = (event) => {

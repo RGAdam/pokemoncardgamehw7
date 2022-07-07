@@ -10,7 +10,7 @@ export const CenteredWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   background-image: url(${backgroundImage});
-  background-size: 100vw 100vh;
+  background-size: cover;
 `;
 
 export const FlexWrapper = styled.div`
