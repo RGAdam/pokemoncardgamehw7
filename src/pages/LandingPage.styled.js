@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import backgroundImage from "../assets/background-start.png";
-
 export const CenteredWrapper = styled.div`
   height: 100vh;
   width: 100vw;
@@ -9,7 +7,7 @@ export const CenteredWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(${backgroundImage});
+  background-image: url(/assets/background-start.png);
   background-size: cover;
 `;
 

@@ -1,7 +1,5 @@
 import { Card, Wrapper } from "./PokemonCard.styled";
 
-import CardBackSrc from "../../assets/card-back.png";
-
 const PokemonCard = ({ card, handleChoice, flipped, disabled }) => {
   const handleClick = () => {
     if (!disabled) {
@@ -12,7 +10,7 @@ const PokemonCard = ({ card, handleChoice, flipped, disabled }) => {
   return (
     <Wrapper>
       {!flipped ? (
-        <Card src={CardBackSrc} alt="" onClick={handleClick} />
+        <Card src="/assets/card-back.png" alt="" onClick={handleClick} />
       ) : (
         <Card src={card.src} alt="" />
       )}

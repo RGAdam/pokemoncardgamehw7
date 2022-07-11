@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import backgroundImage from "../assets/background-game.png";
-
 export const CenteredWrapper = styled.div`
   height: 100%;
   width: 100%;
@@ -9,7 +7,7 @@ export const CenteredWrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background-image: url(${backgroundImage});
+  background-image: url(/assets/background-game.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -5,14 +5,13 @@ import {
   PokemonTitle,
 } from "./LandingPage.styled";
 
-import PokemonTitleSrc from "../assets/pokemon-title.png";
 import Button from "../components/Button/Button";
 import DifficultySelector from "../components/DifficultySelector/DifficultySelector";
 
 const LandingPage = () => {
   return (
     <CenteredWrapper>
-      <PokemonTitle src={PokemonTitleSrc} alt="" />
+      <PokemonTitle src="/assets/pokemon-title.png" alt="" />
       <FlexWrapper>
         <DifficultySelector />
         <Link to="/game">
