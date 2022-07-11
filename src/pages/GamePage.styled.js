@@ -30,6 +30,6 @@ export const Text = styled.p`
 `;
 
 export const Wrapper = styled.div`
-  // height: 100%;
-  // width: 100%;
+  height: 100vh;
+  width: 100%;
 `;
